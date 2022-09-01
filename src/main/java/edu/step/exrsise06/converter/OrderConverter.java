@@ -7,10 +7,9 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 
-@Mapper(componentModel = "spring"
-//        , uses = {
-//        DateTimeMapper.class //даем ссылку на какой класс сылаться для конверта даты в строку и наоборот}
-)
+@Mapper(componentModel = "spring", uses = {
+        DateTimeMapper.class//даем ссылку на какой класс сылаться для конверта даты в строку и наоборот}
+})
 public interface OrderConverter {
 
     Order convert(OrderDto orderDto);

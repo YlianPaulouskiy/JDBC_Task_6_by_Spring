@@ -5,6 +5,6 @@ import edu.step.exrsise06.dto.parent.BaseDto;
 
 public class OrderDto extends BaseDto {
 
-    private String number;
+    private int number;
 
 }

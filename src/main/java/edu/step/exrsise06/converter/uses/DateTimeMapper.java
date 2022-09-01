@@ -2,15 +2,17 @@ package edu.step.exrsise06.converter.uses;
 
 
 import edu.step.exrsise06.exception.DateTimeMapperException;
+import org.mapstruct.Mapper;
 
+import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.DateTimeException;
-import java.util.Date;
+
 
 import static edu.step.exrsise06.constants.Constants.DATE_PATTERN;
 import static edu.step.exrsise06.constants.Constants.DATE_TIME_PATTERN;
 
+@Mapper(componentModel = "spring")
 public class DateTimeMapper {
 
     public String date(Date date) {
