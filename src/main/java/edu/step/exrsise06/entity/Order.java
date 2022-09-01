@@ -14,7 +14,7 @@ import java.util.List;
 public class Order extends BaseEntity {
 
     @Basic
-    private Integer number;
+    private String number;
 
     //------------------------------------------------------------------------------------------------------------------
 
