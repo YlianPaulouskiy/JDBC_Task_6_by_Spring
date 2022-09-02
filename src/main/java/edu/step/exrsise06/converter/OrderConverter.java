@@ -4,7 +4,8 @@ import edu.step.exrsise06.converter.uses.DateTimeMapper;
 import edu.step.exrsise06.dto.OrderDto;
 import edu.step.exrsise06.entity.Order;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
+
+import java.util.List;
 
 
 @Mapper(componentModel = "spring", uses = {
@@ -15,5 +16,9 @@ public interface OrderConverter {
     Order convert(OrderDto orderDto);
 
     OrderDto convert(Order order);
+
+    List<Order> convertToModel(List<OrderDto> source);
+
+    List<OrderDto> convertToDto(List<Order> source);
 
 }
