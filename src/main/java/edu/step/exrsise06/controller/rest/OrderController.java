@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface OrderController {
 
-    @GetMapping
+    @GetMapping()
     OrderProductsDto findOne(@RequestParam("id") Long id);
 
     @GetMapping("/all")

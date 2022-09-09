@@ -8,7 +8,7 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 @Getter
 @Setter
-public class NameEntity extends BaseEntity{
+public abstract class NameEntity extends BaseEntity{
 
     private String name;
 }
